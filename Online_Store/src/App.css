@@ -1,0 +1,39 @@
+/*ChatGPT (OpenAI) assisted in the creation and polishing of each of the CSS files used*/
+#root {
+  width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.products-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.products-section > h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 35px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
